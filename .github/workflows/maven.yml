@@ -39,9 +39,9 @@ jobs:
       with:
         name: Package
         path: staging
-    - name: Deploy with maven
-      run: mvn -B deploy -DmuleDeploy -s .maven/settings.xml      
-      env:
-          PLATFORM_USERNAME: ${{ secrets.PLATFORM_USERNAME }}
-          PLATFORM_PASSWORD: ${{ secrets.PLATFORM_PASSWORD }}
+   # - name: Deploy with maven
+    #  run: mvn -B deploy -DmuleDeploy -s .maven/settings.xml      
+   #   env:
+      #    PLATFORM_USERNAME: ${{ secrets.PLATFORM_USERNAME }}
+       #   PLATFORM_PASSWORD: ${{ secrets.PLATFORM_PASSWORD }}
     
